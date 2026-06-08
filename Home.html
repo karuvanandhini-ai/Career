@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>e-Careerpluz</title>
+<link rel="icon" href="caree.png">
+
+<style>
+body{
+    text-align:center;
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    background-color:#1e2a38;
+    padding:15px;
+    position:sticky;
+    top:0;
+    box-shadow:0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar a{
+    color:white;
+    margin:0 20px;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:#00bcd4;
+}
+
+/* Home Section */
+.section{
+    padding:20px;
+}
+
+/* Card */
+.card{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    padding:20px;
+}
+
+/* Images */
+.image-container{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.image-container img{
+    width:300px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.image-container img {
+    width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.image-container img:hover {
+    animation: float 1s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Card Content */
+.card-content{
+    text-align:center;
+    margin-top:15px;
+}
+
+.card-content h3{
+    margin:0;
+    color:#0077cc;
+}
+
+.card-content p{
+    color:#666;
+    font-size:14px;
+}
+
+/* Footer */
+footer{
+    background:#1e2a38;
+    color:white;
+    padding:15px;
+    margin-top:20px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+.card {
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.hover-img {
+    transition: transform 0.4s ease;
+
+}
+.hover-img:hover {
+    transform: rotate(5deg);
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+.image-container img:hover {
+    animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(8px, -12px);
+    }
+    50% {
+        transform: translate(-8px, -6px);
+    }
+    75% {
+        transform: translate(8px, 8px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Course.html">Courses</a>
+    <a href="contact.html">Contact</a>
+    <a href="location.html">Location</a>
+     <a href="/certificate.html">Certification</a>
+</div>
+<div id="home" class="section">
+    <img src="instutie.png" alt="Institute">
+    <h1>Welcome to Our Institute</h1>
+    <p>We provide professional training and quality education.</p>
+</div>
+<div class="card">
+    <div class="image-container">
+        <img src="home1.png" alt="Image 1">
+        <img src="home2.png" alt="Image 2">
+        <img src="home3.png" alt="Image 3">
+    </div>
+    <div class="card-content">
+        <h3>e-Careerpluz</h3>
+        <p>Your educational and career growth platform.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 e-Careerpluz. All rights reserved. 📞 Call: +91-98946 57508
+</footer>
+
+</body>
+</html>

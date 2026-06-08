@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <link rel="icon" href="/caree.png">
+
+    <style>
+        footer{
+        text-align: center;
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #1e2a38;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #00bcd4;
+        }
+
+        /* Enquiry Section */
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .enquiry-container {
+            background: white;
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .enquiry-container h1 {
+            text-align: center;
+            color: #1e2a38;
+            margin-bottom: 10px;
+        }
+
+        .enquiry-container p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .submit-btn:hover {
+            background: #0097a7;
+        }
+
+        .contact-info {
+            margin-top: 25px;
+            text-align: center;
+            color: #555;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+        }
+
+        @media (max-width: 768px) {
+            .navbar a {
+                margin: 0 10px;
+                font-size: 14px;
+            }
+
+            .enquiry-container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Course.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="location.html">Location</a>
+         <a href="/certificate.html">Certification</a>
+    </div>
+
+    <!-- Enquiry Form -->
+    <section class="section">
+        <div class="enquiry-container">
+            <h1>Course Enquiry Form</h1>
+            <p>Fill out the form below and we will contact you soon.</p>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location / City</label>
+                    <input type="text" id="location" name="location" placeholder="Enter your city/location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Interested Course</label>
+                    <select id="course" name="course">
+                        <option>Select a Course</option>
+                        <option>Mobile Hardware Repair</option>
+                        <option>Laptop Repair</option>
+                        <option>Computer Hardware</option>
+                        <option>Software Development</option>
+                        <option>Networking</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Write your enquiry here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit Enquiry
+                </button>
+
+            </form>
+
+            <div class="contact-info">
+                <p>📱 Mobile: +91 98946 57508</p>
+                <p>📧 Email: support@careerpluz.com</p>
+                <p> 🌍 Website: https://careerpluz.in</p>
+            </div>
+        </div>
+    </section>
+<footer>
+        &copy; 2026 e-Careerpluz.All rights reserved. 📞 Call: +91-98946 57508 
+    </footer>
+
+</body>
+</html>
